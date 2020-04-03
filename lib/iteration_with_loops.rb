@@ -4,15 +4,13 @@
 require "pry"
 def join_nested_strings(src)
 final_string = ""
-space = " "
 row_index = 0
   while row_index < src.count
   element_index = 0
     while element_index < src[row_index].count
       if src[row_index][element_index].is_a?(String)
         binding.pry
-       final_string << src[row_index][element_index]
-       final_string << space
+       final_string << src[row_index][element_index]+" "
       end
     element_index += 1
     end
